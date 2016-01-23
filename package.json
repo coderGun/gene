@@ -1,0 +1,34 @@
+{
+  "name": "gene",
+  "version": "1.0.0",
+  "description": "gene just test pm",
+  "main": "index.js",
+  "dependencies": {
+    "css-loader": "^0.23.1",
+    "html-webpack-plugin": "^1.7.0",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "devDependencies": {
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderGun/gene.git"
+  },
+  "keywords": [
+    "react",
+    "webpack"
+  ],
+  "author": "reny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderGun/gene/issues"
+  },
+  "homepage": "https://github.com/coderGun/gene#readme"
+}
