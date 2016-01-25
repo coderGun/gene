@@ -62,7 +62,7 @@ body {
 }
 
 .container-box {
-    display: none;
+    /* display: none;*/
     width: 600px;
     height: 320px;
     margin-top: 10px;
