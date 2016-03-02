@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>CSS3</title>
+        <style>
+             ul.items li {
+                width: 200px;
+                height: 300px;
+                margin: 0 8px;
+                background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/bg_green.png) no-repeat 0px 400px;
+                overflow: hidden;
+            }
+            .list-inline>li {
+                display: inline-block;
+                padding-right: 5px;
+                padding-left: 5px;
+            }
+             ul.items li u {
+                display: block;
+                position: absolute;
+                width: 156px;
+                height: 156px;
+                margin-left: 22px;
+                background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat 0px -363px;
+                -webkit-transition: all .5s ease-in-out 0s;
+                -moz-transition: all .5s ease-in-out 0s;
+                -ms-transition: all .5s ease-in-out 0s;
+                -o-transition: all .5s ease-in-out 0s;
+                transition: all .5s ease-in-out 0s;
+            }
+             ul.items li:hover {
+                 background-position: 0px 0px;
+                 -webkit-transition: all .5s ease-in-out .3s;
+                 -moz-transition: all .5s ease-in-out .3s;
+                 -ms-transition: all .5s ease-in-out .3s;
+                 -o-transition: all .5s ease-in-out .3s;
+                 transition: all .5s ease-in-out .3s;
+             }
+             ul.items li u.cl {
+                clip: rect(0px,156px,156px,78px);
+            }
+             ul.items li u.cr {
+                clip: rect(0px,78px,156px,0px);
+            }
+             ul.items li.pc i {
+                 width: 69px;
+                 background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -245px -357px;
+             }
+             ul.items li i {
+                 display: block;
+                 position: relative;
+                 margin: 0 auto;
+                 margin-top: 43px;
+                 height: 69px;
+             }
+             ul.items li strong {
+                 display: block;
+                 margin-top: 70px;
+                 font-size: 16px;
+                 font-weight: normal;
+                 text-align: center;
+             }
+             ul.items li p {
+                 position: relative;
+                 top: 200px;
+                 color: White;
+                 font-family: Arial,"宋体";
+                 font-size: 12px;
+                 line-height: 20px;
+                 text-align: center;
+             }
+        </style>
+    </head>
+    <body>
+    <section class="business active" style="height: 397px;">
+        <div class="box" style="top: 48px;">
+            <div class="caption">
+                <br class="clear">
+            </div>
+            <ul class="items list-inline" style="width: 1148px;">
+                <li class="pc"><u class="cl"></u><u class="cr"></u>
+                    <i></i><strong>高端定制网站</strong>
+                    <p>企业高端定制网站设计<br>彰显品牌形象</p>
+                </li>
+                <li class="mobi"><u class="cl"></u><u class="cr"></u>
+                    <i></i><strong>移动网站建设</strong>
+                    <p>定制手机网站 / 微网站制作<br>布局移动互联网</p>
+                </li>
+                <li class="sys"><u class="cl"></u><u class="cr"></u>
+                    <i></i><strong>业务系统研发</strong>
+                    <p>基于 B/S 架构的系统研发<br>让业务办公轻松自如</p>
+                </li>
+                <li class="app"><u class="cl"></u><u class="cr"></u>
+                    <i></i><strong>APP应用程序</strong>
+                    <p>基于 iOS / Android 应用开发<br>掌控智能终端时代</p>
+                </li>
+                <li class="host"><u class="cl"></u><u class="cr"></u>
+                    <i></i><strong>服务器运维</strong>
+                    <p>我们不只提供云硬件和网络<br>更加注重技术运维</p>
+                </li>
+            </ul>
+            <label></label></div>
+    </section>
+    </body>
+</html>

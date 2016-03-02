@@ -1,0 +1,12 @@
+/*header start*/
+header.fixed{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    color: #ccc;
+    z-index: 999;
+}
+/*header end*/
+
+/*footer start*/
+/*footer end*/
