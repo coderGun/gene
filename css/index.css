@@ -1,12 +1,361 @@
 /*header start*/
-header.fixed{
+header{
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: absolute;
     color: #ccc;
     z-index: 999;
+    line-height: 60px;
+    color: #fff;
+}
+.menu-box p{
+    letter-spacing: 1px;
+}
+.menu-box p img{
+    width: 25px;
+    margin-right: 12px;
+}
+.menu-box ul.nav{
+    width: 100px;
+}
+.menu-box ul.nav>li{
+    width: 80px;
+    margin-bottom: 10px;
+    background: #fff;
+    border-radius: 3px;
+    line-height: 26px;
+    padding-left: 12px;
+}
+.menu-box ul.nav>li>a{
+    padding: 0;
+    color: rgb(102, 102, 102);
+}
+.header-logo-box img{
+    width: 161px;
+    height: 35px;
+}
+.header-login-box a{
+    color: #fff;
 }
 /*header end*/
 
 /*footer start*/
+footer{
+    padding:100px 0 40px 0;
+    color: #666;
+}
 /*footer end*/
+
+.welcome{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background-image: -moz-linear-gradient( -33deg, rgb(0,212,175) 0%, rgb(1,127,216) 100%);
+    background-image: -webkit-linear-gradient( -33deg, rgb(0,212,175) 0%, rgb(1,127,216) 100%);
+    background-image: -ms-linear-gradient( -33deg, rgb(0,212,175) 0%, rgb(1,127,216) 100%);
+}
+.welcome-container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    top: 60px;
+}
+.swiper-container{
+    width: 100%;
+    height: 600px;
+    position: relative;
+    z-index: 10;
+}
+.swiper-slide,.welcome-more{
+    color: #fff;
+    z-index: 10;
+    margin: 0 auto;
+}
+.swiper-slide{
+    width: 600px;
+    padding-top: 80px;
+}
+.swiper-slide h1{
+    font-size: 35px;
+    font-family: "Hiragino Sans GB";
+}
+.swiper-slide h2{
+    font-size: 36px;
+    font-family: "Myriad Pro";
+}
+
+.swiper-slide h6{
+    text-align: justify;
+    font-family: "Hiragino Sans GB";
+    margin-top: 20px;
+    line-height: 20px;
+}
+
+.welcome-more,.news-more{
+    width: 300px;
+    padding-top: 70px;
+    margin: 0 auto;
+}
+.welcome-more .btn-more{
+    width: 120px;
+    padding: 2px;
+    border: 1px solid #fff;
+    border-radius: 3px;
+    font-size: 14px;
+    font-family: "Hiragino Sans GB";
+    color: #fff;
+}
+.btn-down-box{
+    padding: 70px 0 30px 0;
+}
+.btn-down{
+    color: #fff;
+    padding: 0 0 0 1px;
+    line-height: 22px;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.71);
+    width: 20px;
+    height: 20px;
+    margin: 0 auto;
+}
+.guide>li{
+    width: 20px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.502);
+}
+.welcome-dot{
+    width: 100%;
+    height: 660px;
+    position: absolute;
+    top: -60px;
+    z-index: 1;
+}
+.about-box .caption,.news-box .caption,.contact-box .caption{
+    position: relative;
+    width: 100%;
+    -moz-opacity: 0;
+    opacity: 0;
+    -webkit-transition: all .5s ease-in-out 0s;
+    -moz-transition: all .5s ease-in-out 0s;
+    -ms-transition: all .5s ease-in-out 0s;
+    -o-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+    z-index: 10;
+}
+.about-box .caption,.news-box .caption,.contact-box .caption {
+    -moz-opacity: 1;
+    opacity: 1;
+    width: 600px;
+    margin: 120px auto 50px auto;
+}
+.about-box .caption h2,.news-box .caption h2,.contact-box .caption h2 {
+    font-size: 40px;
+    font-family: "FZDHTJW";
+    color: rgb(51, 51, 51);
+}
+
+.about-box .caption h6,.news-box .caption h6,.contact-box .caption h6 {
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+}
+.about-list-box,.news-list-box{
+    position: relative;
+}
+.about-list li{
+    width: 200px;
+    height: 300px;
+    margin: 0 8px;
+    background: url(../images/bg_blue.png) no-repeat 0px 400px;
+    overflow: hidden;
+    padding: 0;
+}
+.about-list li.research i {
+    width: 69px;
+    background: url(../images/research.png) no-repeat -18px -16px;
+}
+.about-list li.clinical i {
+    width: 69px;
+    height: 80px;
+    background: url(../images/clinical.png) no-repeat -12px -10px;
+}
+.about-list li.healthy i {
+     width: 80px;
+     background: url(../images/healthy.png) no-repeat -12px -16px;
+}
+
+.about-list li.overseas i {
+    width: 80px;
+    height: 80px;
+    background: url(../images/overseas.png) no-repeat -9px -10px;
+}
+.about-list li i {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 43px;
+    height: 69px;
+}
+.about-list li b {
+    display: block;
+    position: absolute;
+    width: 156px;
+    height: 156px;
+    margin-left: 22px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat 0px -363px;
+    -webkit-transition: all .5s ease-in-out 0s;
+    -moz-transition: all .5s ease-in-out 0s;
+    -ms-transition: all .5s ease-in-out 0s;
+    -o-transition: all .5s ease-in-out 0s;
+    transition: all .5s ease-in-out 0s;
+}
+/*.about-list li b.cl {
+    clip: rect(0px,156px,156px,78px);
+}
+.about-list li b.cl {
+    clip: rect(0px,156px,-10px,78px);
+}
+.about-list li b.cr {
+    clip: rect(0px,78px,156px,0px);
+}
+
+.about-list li b.cr {
+    clip: rect(156px,78px,156px,0px);
+}*/
+
+.about-list li strong {
+    display: block;
+    margin-top: 70px;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+}
+.about-list li p {
+    position: relative;
+    top: 200px;
+    color: White;
+    font-family: Arial,"宋体";
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+}
+
+.team{
+    width: 100%;
+    height: 500px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: url(../images/bg_team.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+.team-box .caption{
+    padding: 20px 0;
+}
+.team-box li i{
+    color: #84c2ed;
+}
+.team-box li img{
+    width: 80px;
+    height: 80px;
+}
+.team .leader{
+    font-size: 40px;
+    font-family: "MicrosoftYaHei";
+    padding: 10px;
+}
+.team .leader-detail{
+    width: 600px;
+    text-align: justify;
+    font-size: 13px;
+    font-family: "MicrosoftYaHei";
+    line-height: 1.5;
+    padding-top: 30px;
+    font-weight: normal;
+}
+.news{
+    width: 100%;
+    height: 800px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+    background: url(../images/bg-news.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+.news-list-box li{
+    width: 250px;
+    background: #fff;
+    font-size: 16px;
+    font-family: "MicrosoftYaHei";
+    color: rgb(51, 51, 51);
+    line-height: 1.5;
+    padding: 0;
+    margin: 0 30px;
+    overflow: hidden;
+}
+.news-list-box li h6{
+    padding:15px 20px 36px 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+.news-more .btn-more{
+    width: 120px;
+    padding: 2px;
+    margin: 0 auto;
+    border: 1px solid rgb(0, 170, 172);
+    border-radius: 3px;
+    font-size: 14px;
+    color: rgb(0, 170, 172);
+    font-family: "Hiragino Sans GB";
+}
+
+.contact{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    background: url(../images/bg_contact.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-origin: content-box;
+}
+.contact-form{
+    width: 600px;
+    margin: 0 auto;
+}
+.contact-form .row{
+    margin: 20px 0;
+}
+.contact-message{
+    height: 50px;
+    resize: none;
+}
+.btn-contact{
+    width: 300px;
+    line-height: 26px;
+    border: 3px solid rgb(0, 170, 172);
+    border-radius: 3px;
+    background-color: rgb(0, 170, 172);
+    color: #fff;
+    font-size: 16px;
+    font-family: "Hiragino Sans GB";
+    margin-left: 15px;
+    cursor: pointer;
+}
+.btn-contact:hover{
+    color: #fff;
+    text-decoration: none;
+}
+.btn-contact:hover{
+    color: #fff;
+}
+.contact-box .address{
+    width: 600px;
+    margin: 0 auto;
+    padding-left: 15px;
+    color: #666;
+    text-align: left;
+}
+

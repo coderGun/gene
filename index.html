@@ -2,99 +2,133 @@
 <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-        <meta name="description" content="客如云是国内领先的O2O创新公司，倾力于打造智能化，云化本地餐饮业！" />
-        <meta name="keywords" content="客如云 找位 找空位 空位 位子 预订 预定 预约 就餐 饭 餐厅 餐馆 美食 食客 食物 吃 吃饭 时时客 优惠 订餐 订位 选位 选座 座位 "/>
-        <title>客如云，智能云餐厅</title>
+        <meta name="keywords" content="赫斯基因,基因,癌症精确诊疗专家" />
+        <meta name="description" content="致力于协助医疗专家为癌症患者和癌症高危人群提供最可靠的分子诊疗方案，同时为健康人群提供专业的癌症遗传风险评估。泛生子依靠自身强大的癌症基因组学基础和高效的临床转化能力，将国内外最新癌症诊疗技术转化为服务临床的产品,服务中国乃至全球的癌症患者。 " />
+        <title>赫斯基因</title>
         <link href="images/favicon.png" rel="shortcut icon">
-        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header class="container-fluid fixed">
+        <header class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <div>
-                        <p>MENU</p>
-                        <ul class="list-unstyled hidden">
+                    <div class="menu-box">
+                        <p><img src="images/menu.png">MENU</p>
+                        <ul class="nav nav-pills nav-stacked">
                             <li><a href="index.html">首页</a></li>
                             <li><a href="index.html#about">关于我们</a></li>
                             <li><a href="index.html#team">专家团队</a></li>
-                            <li><a href="index.html#job">业务中心</a></li>
+                            <li><a href="index.html#business">业务中心</a></li>
                             <li><a href="index.html#news">新闻中心</a></li>
                             <li><a href="index.html#product">产品中心</a></li>
                             <li><a href="index.html#contact">联系我们</a></li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <img class="logo" src="images/logo.png">
+                <div class="col-md-6 text-center">
+                   <a class="header-logo-box" href="index.html" title="赫斯基因">
+                        <img src="images/logo.png">
+                   </a>
                 </div>
-                <div class="col-md-3">
-                    <a class="btn">登录</a>
-                    <a class="btn">注册</a>
-                    <a class="btn">EN</a>
+                <div class="col-md-3 text-right">
+                    <div class="header-login-box">
+                        <a class="btn">登录</a>
+                        <a class="btn">注册</a>
+                        <a class="btn">EN</a>
+                    </div>
                 </div>
             </div>
         </header>
-        <div class="container-fluid ">
-            <div class="row">
-                <h1>精准医疗开启健康人生</h1>
-                <h2>Precisely for healthier life！</h2>
-                <h6>
-                    赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
-                    专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
-                </h6>
-                <p>
-                    <a class="btn-block">了解更多</a>
-                </p>
-                <div>
-                    <a class="btn"> <i class="glyphicon glyphicon-arrow-down"></i> </a>
+        <div class="container-fluid welcome">
+            <div class="welcome-container">
+                <div class="text-center swiper-slide">
+                    <h1>精准医疗开启健康人生</h1>
+                    <h2>Precisely for healthier life！</h2>
+                    <h6>
+                        赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
+                        专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
+                    </h6>
                 </div>
-                <ul class="list-inline">
-                    <li>-</li>
-                    <li>-</li>
-                    <li>-</li>
-                </ul>
+                <div class="text-center welcome-more">
+                    <a class="btn btn-more">了解更多</a>
+                    <div class="btn-down-box"><a class="btn-block btn-down"> <i class="glyphicon glyphicon-menu-down"></i> </a></div>
+                    <ul class="list-inline guide">
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class="welcome-dot">
+                    <canvas></canvas>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <h2>WHAT CAN WE DO</h2>
-                <h6>
-                    赫斯基因致力于构建一个具有数据自生成能力的全球性肿瘤基因数据分析平台，在服务广大科研工作者、医生、药企的同时，为肿瘤患者、癌症
-                </h6>
-                <div>
-                    <ul class="list-inline">
-                        <li><p>科研服务</p></li>
-                        <li><p>临床诊断</p></li>
-                        <li><p>健康管理</p></li>
-                        <li><p>海外医疗</p></li>
+        <div id="about" class="container">
+            <div class="text-center about-box">
+                <div class="caption">
+                    <h2>WHAT CAN WE DO</h2>
+                    <h6 class="caption-detail">
+                        赫斯基因致力于构建一个具有数据自生成能力的全球性肿瘤基因数据分析平台，在服务广大科研工作者、医生、药企的同时，为肿瘤患者、癌症
+                    </h6>
+                </div>
+                <div class="about-list-box">
+                    <ul class="list-inline about-list">
+                        <li class="research">
+                            <b class="cl"></b>
+                            <b class="cr"></b>
+                            <i></i>
+                            <strong>科研服务</strong>
+                            <p>科研服务<br>科研服务</p>
+                        </li>
+                        <li class="clinical">
+                            <b class="cl"></b>
+                            <b class="cr"></b>
+                            <i></i>
+                            <strong>临床诊断</strong>
+                            <p>临床诊断 / 临床诊断<br>临床诊断</p>
+                        </li>
+                        <li class="healthy">
+                            <b class="cl"></b>
+                            <b class="cr"></b>
+                            <i></i>
+                            <strong>健康管理</strong>
+                            <p>健康管理<br>健康管理</p>
+                        </li>
+                        <li class="overseas">
+                            <b class="cl"></b>
+                            <b class="cr"></b>
+                            <i></i>
+                            <strong>海外医疗</strong>
+                            <p>海外医疗<br>海外医疗</p>
+                        </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <h2>EXPERT TEAM</h2>
+        <div id="team" class="container-fluid team">
+            <div class="team-box">
+                <h2 class="caption">EXPERT TEAM</h2>
                 <ul class="list-inline">
-                    <li>
+                    <li class="active">
                         <div>
-                            <i class="glyphicon glyphicon-arrow-left"></i>
+                            <a href="#"> <i class="glyphicon glyphicon-menu-left"></i></a>
                             <img class="img-circle" src="images/user.png">
-                            <i class="glyphicon glyphicon-arrow-right"></i>
+                            <a href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
                         </div>
-                        <h3>傅玉</h3>
-                        <h5>首席科学家、美国斯坦福大学认证基因检测分析师</h5>
-                        <h6>
+                        <h3 class="leader">傅玉</h3>
+                        <h5 class="">首席科学家、美国斯坦福大学认证基因检测分析师</h5>
+                        <h6 class="leader-detail">
                             2005年在分子生物学圣地美国冷泉港实验室师从著名学者Josh Huang博士攻读博士学位。
-                            2011年博士毕业后，于加州大学旧...
+                            2011年博士毕业后，于加州大学旧金山分销师从美国科学院院士,美国科学协会主席团成员,Michael Stryker博士后研究.
+                            现任新加坡科技发展局生物影像研究所实验室主任,新加坡国立大学博士生导师
                         </h6>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <div>
-                            <i class="glyphicon glyphicon-arrow-left"></i>
+                            <a href="#"><i class="glyphicon glyphicon-menu-left"></i></a>
                             <img class="img-circle" src="images/user.png">
-                            <i class="glyphicon glyphicon-arrow-right"></i>
+                            <a href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
                         </div>
                         <h3>傅玉2</h3>
                         <h5>首席科学家、美国斯坦福大学认证基因检测分析师</h5>
@@ -103,7 +137,7 @@
                             2011年博士毕业后，于加州大学旧...
                         </h6>
                     </li>
-                    <li>
+                    <li class="hidden">
                         <div>
                             <i class="glyphicon glyphicon-arrow-left"></i>
                             <img class="img-circle" src="images/user.png">
@@ -119,41 +153,70 @@
                 </ul>
             </div>
         </div>
-        <div class="container">
-            <div class="row">
-                <h2>NEWS</h2>
-                <h6>
-                    赫斯基因致力于构建一个具有数据自生成能力的全球性肿瘤基因数据分析平台，在服务广大科研工作者、医生、药企的同时，为肿瘤患者、癌症
-                </h6>
-                <div>
+        <div id="news" class="container news">
+            <div class="text-center news-box">
+                <div class="caption">
+                    <h2>NEWS</h2>
+                    <h6 class="caption-detail">
+                        赫斯基因致力于构建一个具有数据自生成能力的全球性肿瘤基因数据分析平台，在服务广大科研工作者、医生、药企的同时，为肿瘤患者、癌症
+                    </h6>
+                </div>
+                <div class="news-list-box">
                     <ul class="list-inline">
                         <li>
                             <img src="images/news_1.png">
-                            <p>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</p>
+                            <h6>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</h6>
                         </li>
                         <li>
                             <img src="images/news_2.png">
-                            <p>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</p>
+                            <h6>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</h6>
                         </li>
                         <li>
                             <img src="images/news_3.png">
-                            <p>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</p>
+                            <h6>据国家癌症登记中心统计，中国癌症患者五年生存率仅为30.9%。</h6>
                         </li>
                     </ul>
                 </div>
-                <p>
-                    <a class="btn-block">查看更多</a>
-                </p>
+                <div class="text-center news-more">
+                    <a class="btn btn-more">查看更多</a>
+                </div>
             </div>
         </div>
-        <div class="container-fluid">
-            <div class="row">
-                <h2>CONTACT US</h2>
-                <h6>请联系我们的合作伙伴之一，或完成申请表格，以找到你所在地区的合作伙伴。</h6>
-                <form>
-                    <div>表单</div>
+        <div id="contact" class="container-fluid contact">
+            <div class="text-center contact-box">
+                <div class="caption">
+                    <h2>CONTACT US</h2>
+                    <h6 class="caption-detail">
+                        请联系我们的合作伙伴之一，或完成申请表格，以找到你所在地区的合作伙伴。
+                    </h6>
+                </div>
+                <form class="clearfix contact-form">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="姓名*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="公司*">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="邮箱*">
+                        </div>
+                        <div class="col-md-6">
+                            <input type="tel" class="form-control" placeholder="电话*">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <textarea class="form-control contact-message" rows="4" placeholder="想说点什么"></textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <a class="btn-block btn-contact">提交</a>
+                    </div>
                 </form>
-                <div>
+                <div class="address">
                     <p>
                         <strong>上海研发中心</strong> ·上海市岳阳路320号生命科学实验楼B620
                     </p>
@@ -161,20 +224,23 @@
                         <strong>成都数据中心</strong> ·成都市高新区天府软件园E区6栋
                     </p>
                     <p>
-                        <strong>昆明检测中心</strong> ·
+                        <strong>昆明检测中心</strong> ·昆明市高新区科高路国家生物产业基因科技园沃霖大厦14楼
                     </p>
                     <p>
-                        <strong>海外医疗中心</strong> ·
+                        <strong>海外医疗中心</strong> ·美国加州福斯特城:950 Tower Lane.Suite 1200,Foster City ,CA 94404
                     </p>
                 </div>
             </div>
+            <footer class="text-center">
+                <div>
+                    赫斯提雅生物科技有限公司
+                    <span>网址：<a href="www.health-genes.com">www.health-genes.com</a></span>
+                    24小时客服热线：18629015427
+                </div>
+            </footer>
         </div>
-        <footer class="container">
-            <p>
-                赫斯提雅生物科技有限公司
-                <span>网址：<a href="www.health-genes.com">www.health-genes.com</a></span>
-                24小时客服热线：18629015427
-            </p>
-        </footer>
+        <script src="js/lib/jquery.js"></script>
+        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/lib/particleground.js"></script>
     </body>
 </html>
