@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>HTML5实现DNA螺旋动画DEMO演示</title>
+    <style>
+        html, body {
+            margin: 0;
+            background: hsla(182, 100%, 65%, 1);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            overflow: hidden;
+        }
+
+        .helix {
+            margin: 40vh -50%;
+            width: 200%;
+            height: 40vh;
+            -webkit-transform:rotate(30deg);
+            -ms-transform:rotate(30deg);
+            transform:rotate(30deg);
+            -webkit-transform-style:preserve-3d;
+            transform-style:preserve-3d;
+        }
+
+        .dblHelix {
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+            white-space: nowrap;
+        }
+
+        .dblHelix > div {
+            display: inline-block;
+            position: relative;
+            margin: 0 6px;
+            width: 1px;
+            height: 30vh;
+            box-shadow: 1px 1px 1px 1px hsla(183,100%,50%,1);
+            background: hsla(182, 100%, 65%, 1);
+            -webkit-animation: rot 5s linear infinite,
+            chngCol 5s linear alternate infinite;
+            animation: rot 5s linear infinite,
+            chngCol 5s linear alternate infinite;
+            -webkit-transition:all 1s ease;
+            transition:all 1s ease;
+        }
+
+        .dblHelix > div::before,
+        .dblHelix > div::after {
+            position: absolute;
+            left: -2px;
+            border-radius: 50%;
+            width: 12px;
+            height: 10px;
+            box-shadow: 2px 2px 2px 2px hsla(0,0%,0%,0.25);
+            background: hsla(183, 100%, 73%, 1);
+            content: "";
+        }
+
+        .dblHelix > div::before {
+            top: -2px;
+        }
+
+        .dblHelix > div::after {
+            bottom: -2px;
+        }
+        @-webkit-keyframes rot{
+            to {
+                -webkit-transform: rotateX(360deg);
+                transform: rotateX(360deg);
+            }
+        }
+        @keyframes rot{
+            to {
+                -webkit-transform: rotateX(360deg);
+                transform: rotateX(360deg);
+            }
+        }
+
+        @-webkit-keyframes chngCol {
+            to {
+                background:hsla(182, 100%, 65%, 1);
+            }
+        }
+
+        @keyframes chngCol {
+            to {
+                background: hsla(182, 100%, 65%, 1);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+<div class="helix">
+    <div id="container" class="dblHelix"></div>
+</div>
+
+<script>
+    (function (window, document) {
+        var w = window.innerWidth;
+        var cnt = Math.ceil(w / 12 * 2);
+        var c = document.getElementById('container');
+        var divs = document.createDocumentFragment();
+        var i = 0;
+        var div;
+        var delay;
+        var animDelay = ('animationDelay' in document.documentElement.style) ? 'animationDelay' : 'webkitAnimationDelay';
+
+        for (i; i < cnt; ++i) {
+            div = document.createElement('div');
+            delay = (i - cnt) * 0.1;
+            div.style[animDelay] = delay + 's,' + delay / 2 + 's';
+            divs.appendChild(div);
+        }
+
+        c.appendChild(divs);
+
+    })(window, document);
+</script>
+
+</body>
+
+</html>
