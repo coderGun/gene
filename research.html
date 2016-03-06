@@ -11,44 +11,50 @@
     </head>
     <body>
         <header class="container-fluid">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="menu-box">
-                    <p><img src="images/menu.png">MENU</p>
-                    <ul class="nav nav-pills nav-stacked hidden">
-                        <li><a href="index.html">首页</a></li>
-                        <li><a href="index.html#about">关于我们</a></li>
-                        <li><a href="index.html#team">专家团队</a></li>
-                        <li><a href="index.html#business">业务中心</a></li>
-                        <li><a href="index.html#news">新闻中心</a></li>
-                        <li><a href="index.html#product">产品中心</a></li>
-                        <li><a href="index.html#contact">联系我们</a></li>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="menu-box">
+                        <span id="menuNav" class="menu-title"><img src="images/menu.png">MENU</span>
+                        <ul id="menuBox" class="nav nav-pills nav-stacked hidden">
+                            <li class="active"><a href="index.html">首页</a></li>
+                            <li><a href="index.html#about">关于我们</a></li>
+                            <li><a href="index.html#team">专家团队</a></li>
+                            <li><a href="index.html#business">业务中心</a></li>
+                            <li><a href="index.html#news">新闻中心</a></li>
+                            <li><a href="index.html#product">产品中心</a></li>
+                            <li><a href="index.html#contact">联系我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 text-center">
+                    <ul class="list-inline search-nav">
+                        <li class="active"><a href="">科研服务</a></li>
+                        <li><a href="">临床诊断</a></li>
+                        <li><a href="">健康管理</a></li>
+                        <li><a href="">海外医疗</a></li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-md-6 text-center">
-                <ul class="list-inline search-nav">
-                    <li class="active"><a href="">科研服务</a></li>
-                    <li><a href="">临床诊断</a></li>
-                    <li><a href="">健康管理</a></li>
-                    <li><a href="">海外医疗</a></li>
-                </ul>
-            </div>
-            <div class="col-md-3 text-right">
-                <div class="header-login-box">
-                    <a class="btn">登录</a>
-                    <a class="btn">注册</a>
-                    <a class="btn">EN</a>
+                <div class="col-md-3 text-right">
+                    <div class="header-login-box">
+                        <a class="btn">登录</a>
+                        <a class="btn">注册</a>
+                        <a class="btn">EN</a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </header>
+        </header>
         <div class="container-fluid search">
             <div class="search-box">
-                <div class="text-center swiper-slide">
+                <div class="text-center">
                     <h2>科研服务</h2>
-                    <input class="form-control search-text" type="search" placeholder="请输入关键字">
+                        <div class="form-group search-text">
+                            <span class="glyphicon glyphicon-search form-control-feedback"></span>
+                            <input type="text" class="form-control">
+                        </div>
                 </div>
+            </div>
+            <div class="helix-box">
+                <div id="helix" class="dblHelix"></div>
             </div>
         </div>
         <div class="container target">
@@ -65,11 +71,11 @@
                 </div>
                 <div class="target-data">
                     <div class="col-md-6 text-center">
-                        <h2>39</h2>
+                        <h2 id="cancer">0</h2>
                         <p>常见癌症</p>
                     </div>
                     <div class="col-md-6 text-center">
-                        <h2>18000</h2>
+                        <h2 id="tumour">0</h2>
                         <p>样本肿瘤基因组</p>
                     </div>
                 </div>
@@ -84,16 +90,7 @@
                     </h6>
                 </div>
                 <div class="partner-list-box">
-                    <ul class="list-inline">
-                        <li><img src="images/partner_1.jpg"></li>
-                        <li><img src="images/partner_2.jpg"></li>
-                        <li><img src="images/partner_3.jpg"></li>
-                        <li><img src="images/partner_4.jpg"></li>
-                        <li><img src="images/partner_5.jpg"></li>
-                        <li><img src="images/partner_6.jpg"></li>
-                        <li><img src="images/partner_7.jpg"></li>
-                        <li><img src="images/partner_8.jpg"></li>
-                    </ul>
+                    <img src="images/partner_list.jpg">
                 </div>
             </div>
         </div>
@@ -106,5 +103,7 @@
         </footer>
         <script src="js/lib/jquery.js"></script>
         <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="js/module/header.js"></script>
+        <script src="js/module/research.js"></script>
     </body>
 </html>

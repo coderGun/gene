@@ -13,18 +13,7 @@
         <header class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <div class="menu-box">
-                        <p><img src="images/menu.png">MENU</p>
-                        <ul class="nav nav-pills nav-stacked">
-                            <li><a href="index.html">首页</a></li>
-                            <li><a href="index.html#about">关于我们</a></li>
-                            <li><a href="index.html#team">专家团队</a></li>
-                            <li><a href="index.html#business">业务中心</a></li>
-                            <li><a href="index.html#news">新闻中心</a></li>
-                            <li><a href="index.html#product">产品中心</a></li>
-                            <li><a href="index.html#contact">联系我们</a></li>
-                        </ul>
-                    </div>
+                    <span id="menuNav" class="menu-title"><img src="images/menu.png">MENU</>
                 </div>
                 <div class="col-md-6 text-center">
                    <a class="header-logo-box" href="index.html" title="赫斯基因">
@@ -40,6 +29,17 @@
                 </div>
             </div>
         </header>
+        <div id="menuBox" class="menu-box">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="index.html#about">关于我们</a></li>
+                <li><a href="index.html#team">专家团队</a></li>
+                <li><a href="index.html#business">业务中心</a></li>
+                <li><a href="index.html#news">新闻中心</a></li>
+                <li><a href="index.html#product">产品中心</a></li>
+                <li><a href="index.html#contact">联系我们</a></li>
+            </ul>
+        </div>
         <div id="welcome" class="container-fluid welcome">
             <div class="welcome-container">
                 <div class="text-center swiper-slide">
@@ -51,7 +51,7 @@
                     </h6>
                 </div>
                 <div class="text-center welcome-more">
-                    <a class="btn btn-more">了解更多</a>
+                    <a href="index.html#about" class="btn btn-more">了解更多</a>
                     <div class="btn-down-box"><a class="btn-block btn-down"> <i class="glyphicon glyphicon-menu-down"></i> </a></div>
                     <ul class="list-inline guide">
                         <li></li>
@@ -241,6 +241,7 @@
         </div>
         <script src="js/lib/jquery.js"></script>
         <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="js/lib/particleground.js"></script>
+        <script src="js/module/particleground.js"></script>
+        <script src="js/module/header.js"></script>
     </body>
 </html>

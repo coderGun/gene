@@ -8,10 +8,11 @@ header{
     line-height: 60px;
     color: #fff;
 }
-.menu-box p{
+.menu-title{
     letter-spacing: 1px;
+    cursor: pointer;
 }
-.menu-box p img{
+.menu-title img{
     width: 25px;
     margin-right: 12px;
 }
@@ -30,6 +31,14 @@ header{
     padding: 0;
     color: rgb(102, 102, 102);
 }
+.menu-box ul.nav>li.active,.menu-box ul.nav>li:hover {
+    background-color: rgb(0, 170, 172);
+}
+.menu-box ul.nav>li.active a,.menu-box ul.nav>li:hover a {
+    color: #fff;
+    background-color: rgb(0, 170, 172);
+}
+
 .header-logo-box img{
     width: 161px;
     height: 35px;
