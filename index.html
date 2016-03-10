@@ -5,7 +5,7 @@
         <meta name="keywords" content="赫斯基因,基因,癌症精确诊疗专家" />
         <meta name="description" content="致力于协助医疗专家为癌症患者和癌症高危人群提供最可靠的分子诊疗方案，同时为健康人群提供专业的癌症遗传风险评估。泛生子依靠自身强大的癌症基因组学基础和高效的临床转化能力，将国内外最新癌症诊疗技术转化为服务临床的产品,服务中国乃至全球的癌症患者。 " />
         <title>赫斯基因</title>
-        <link href="images/favicon.png" rel="shortcut icon">
+        <link href="images/favicon.ico" rel="shortcut icon">
         <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css">
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -13,7 +13,7 @@
         <header class="container-fluid">
             <div class="row">
                 <div class="col-md-3">
-                    <span id="menuNav" class="menu-title"><img src="images/menu.png">MENU</>
+                    <span id="menuNav" class="menu-title"><img src="images/menu.png">MENU</span>
                 </div>
                 <div class="col-md-6 text-center">
                    <a class="header-logo-box" href="index.html" title="赫斯基因">
@@ -22,8 +22,8 @@
                 </div>
                 <div class="col-md-3 text-right">
                     <div class="header-login-box">
-                        <a class="btn">登录</a>
-                        <a class="btn">注册</a>
+                        <a class="btn" href="login.html">登录</a>
+                        <a class="btn" href="register.html">注册</a>
                         <a class="btn">EN</a>
                     </div>
                 </div>
@@ -32,78 +32,110 @@
         <div id="menuBox" class="menu-box">
             <ul class="nav nav-pills nav-stacked">
                 <li class="active"><a href="index.html">首页</a></li>
-                <li><a href="index.html#about">关于我们</a></li>
-                <li><a href="index.html#team">专家团队</a></li>
                 <li><a href="index.html#business">业务中心</a></li>
+                <li><a href="index.html#team">专家团队</a></li>
                 <li><a href="index.html#news">新闻中心</a></li>
-                <li><a href="index.html#product">产品中心</a></li>
                 <li><a href="index.html#contact">联系我们</a></li>
+                <!--<li><a href="index.html#about">关于我们</a></li>-->
             </ul>
         </div>
         <div id="welcome" class="container-fluid welcome">
             <div class="welcome-container">
-                <div class="text-center swiper-slide">
-                    <h1>精准医疗开启健康人生</h1>
-                    <h2>Precisely for healthier life！</h2>
-                    <h6>
-                        赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
-                        专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
-                    </h6>
-                </div>
-                <div class="text-center welcome-more">
-                    <a href="index.html#about" class="btn btn-more">了解更多</a>
-                    <div class="btn-down-box"><a class="btn-block btn-down"> <i class="glyphicon glyphicon-menu-down"></i> </a></div>
-                    <ul class="list-inline guide">
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
+                <div id="welcome-carousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#welcome-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#welcome-carousel" data-slide-to="1" class=""></li>
+                        <li data-target="#welcome-carousel" data-slide-to="2" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <div class="carousel-caption">
+                                <h1>精准医疗开启健康人生</h1>
+                                <h2>Precisely for healthier life！</h2>
+                                <h6>
+                                    赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
+                                    专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
+                                </h6>
+                                <a class="btn btn-more" href="index.html#business">了解更多</a>
+                                <div class="btn-down-box">
+                                    <a class="btn-block btn-down" href="index.html#business"> <i class="glyphicon glyphicon-menu-down"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <h1>精准医疗开启健康人生2</h1>
+                                <h2>Precisely for healthier life！</h2>
+                                <h6>
+                                    赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
+                                    专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
+                                </h6>
+                                <a class="btn btn-more" href="index.html#business">了解更多</a>
+                                <div class="btn-down-box">
+                                    <a class="btn-block btn-down" href="index.html#business"> <i class="glyphicon glyphicon-menu-down"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="carousel-caption">
+                                <h1>精准医疗开启健康人生3</h1>
+                                <h2>Precisely for healthier life！</h2>
+                                <h6>
+                                    赫斯基因（Health-Genes）是一家由来自世界一流大学的国际知名学者、海归人才、大数据专家和互联网精英共同创办的，
+                                    专业提供肿瘤基因检测分析、个性化癌症防治指导和健康大数据解决方案的创新性高新技术企业.
+                                </h6>
+                                <a class="btn btn-more" href="index.html#business">了解更多</a>
+                                <div class="btn-down-box">
+                                    <a class="btn-block btn-down" href="index.html#business"> <i class="glyphicon glyphicon-menu-down"></i> </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="welcome-dot">
                     <canvas></canvas>
                 </div>
             </div>
         </div>
-        <div id="about" class="container about">
-            <div class="text-center about-box">
+        <div id="business" class="container business">
+            <div class="text-center about-box active">
                 <div class="caption">
                     <h2>WHAT CAN WE DO</h2>
                     <h6 class="caption-detail">
                         赫斯基因致力于构建一个具有数据自生成能力的全球性肿瘤基因数据分析平台，在服务广大科研工作者、医生、药企的同时，为肿瘤患者、癌症
                     </h6>
                 </div>
-                <div class="about-list-box">
-                    <ul class="list-inline about-list">
-                        <li class="research">
-                            <b class="cl"></b>
-                            <b class="cr"></b>
-                            <i></i>
-                            <strong>科研服务</strong>
-                            <p>科研服务<br>科研服务</p>
-                        </li>
-                        <li class="clinical">
-                            <b class="cl"></b>
-                            <b class="cr"></b>
-                            <i></i>
-                            <strong>临床诊断</strong>
-                            <p>临床诊断 / 临床诊断<br>临床诊断</p>
-                        </li>
-                        <li class="healthy">
-                            <b class="cl"></b>
-                            <b class="cr"></b>
-                            <i></i>
-                            <strong>健康管理</strong>
-                            <p>健康管理<br>健康管理</p>
-                        </li>
-                        <li class="overseas">
-                            <b class="cl"></b>
-                            <b class="cr"></b>
-                            <i></i>
-                            <strong>海外医疗</strong>
-                            <p>海外医疗<br>海外医疗</p>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="items list-inline" style="width: 1148px;">
+                    <li class="pc">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i></i>
+                        <strong><a href="research.html">科研服务</a></strong>
+                        <p>为癌症患者提供肿瘤基因检测分析服务..</p>
+                    </li>
+                    <li class="mobi">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i></i>
+                        <strong><a href="clinical.html">临床诊断</a></strong>
+                        <p>为癌症患者提供肿瘤基因检测分析服务，通过检测让医疗更加精准，让用药更加有效 </p>
+                    </li>
+                    <li class="sys">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i></i>
+                        <strong><a href="health.html">健康管理</a></strong>
+                        <p>海外医疗海外医疗海外医疗海外医疗,海外医疗海外医疗海外医疗海外医疗海外医疗</p>
+                    </li>
+                    <li class="app">
+                        <u class="cl"></u>
+                        <u class="cr"></u>
+                        <i></i>
+                        <strong><a href="abroad.html">海外医疗</a></strong>
+                        <p>基于 iOS / Android 应用开发<br>掌控智能终端时代</p>
+                    </li>
+
+                </ul>
             </div>
         </div>
         <div id="team" class="container-fluid team">
@@ -112,9 +144,9 @@
                 <ul class="list-inline">
                     <li class="active">
                         <div>
-                            <a href="#"> <i class="glyphicon glyphicon-menu-left"></i></a>
+                            <a href="javascript:0;"> <i class="glyphicon glyphicon-menu-left"></i></a>
                             <img class="img-circle" src="images/user.png">
-                            <a href="#"><i class="glyphicon glyphicon-menu-right"></i></a>
+                            <a href="javascript:0;"><i class="glyphicon glyphicon-menu-right"></i></a>
                         </div>
                         <h3 class="leader">傅玉</h3>
                         <h5 class="">首席科学家、美国斯坦福大学认证基因检测分析师</h5>
@@ -240,7 +272,7 @@
             </footer>
         </div>
         <script src="js/lib/jquery.js"></script>
-        <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="css/bootstrap/js/bootstrap.min.js"></script>
         <script src="js/module/particleground.js"></script>
         <script src="js/module/header.js"></script>
     </body>

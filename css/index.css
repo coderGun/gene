@@ -15,15 +15,15 @@ header{
 .menu-title img{
     width: 25px;
     margin-right: 12px;
-
 }
 .header-logo-box img{
     width: 161px;
     height: 35px;
 }
-.header-login-box a{
+.header-login-box a,.header-login-box a:hover{
     color: #fff;
 }
+
 .menu-box{
     top: 60px;
     left: 0px;
@@ -79,6 +79,7 @@ footer{
     position: relative;
     top: 60px;
 }
+
 .swiper-container{
     width: 100%;
     height: 600px;
@@ -90,20 +91,31 @@ footer{
     z-index: 10;
     margin: 0 auto;
 }
-.swiper-slide{
+.welcome-container .carousel{
     width: 600px;
     padding-top: 80px;
+    margin: 0 auto;
+    z-index: 10;
 }
-.swiper-slide h1{
+.welcome-container .carousel-caption{
+    left: 0;
+    right: 0;
+    padding: 0;
+    top:0;
+}
+.welcome-container .carousel-inner{
+    height: 400px;
+}
+.welcome-container .carousel h1{
     font-size: 35px;
     font-family: "Hiragino Sans GB";
 }
-.swiper-slide h2{
+.welcome-container h2{
     font-size: 36px;
     font-family: "Myriad Pro";
 }
 
-.swiper-slide h6{
+.welcome-container h6{
     text-align: justify;
     font-family: "Hiragino Sans GB";
     margin-top: 20px;
@@ -115,19 +127,20 @@ footer{
     padding-top: 70px;
     margin: 0 auto;
 }
-.welcome-more .btn-more{
-    width: 120px;
-    padding: 2px;
+.welcome-container .btn-more{
+    width: 150px;
+    padding: 4px;
+    margin-top: 30px;
     border: 1px solid #fff;
     border-radius: 3px;
     font-size: 14px;
     font-family: "Hiragino Sans GB";
     color: #fff;
 }
-.btn-down-box{
+.welcome-container .btn-down-box{
     padding: 70px 0 30px 0;
 }
-.btn-down{
+.welcome-container .btn-down{
     color: #fff;
     padding: 0 0 0 1px;
     line-height: 22px;
@@ -136,6 +149,18 @@ footer{
     width: 20px;
     height: 20px;
     margin: 0 auto;
+}
+.welcome-container .carousel-indicators{
+    bottom: -20px;
+}
+.welcome-container .carousel-indicators li{
+    width: 26px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0;
+}
+.welcome-container .carousel-indicators li.active{
+    border-color: #00c6ff;
 }
 .guide>li{
     width: 20px;
@@ -179,44 +204,59 @@ footer{
     color: rgb(102, 102, 102);
     line-height: 1.5;
 }
-.about-list-box,.news-list-box{
-    position: relative;
+
+
+
+
+.about-box  ul.items {
+    margin: 0 auto;
+    margin-top: 60px;
 }
-.about-list li{
+
+.about-box  ul.items li {
     width: 200px;
     height: 300px;
     margin: 0 8px;
-    background: url(../images/bg_blue.png) no-repeat 0px 400px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/bg_green.png) no-repeat 0px 400px;
     overflow: hidden;
-    padding: 0;
 }
-.about-list li.research i {
-    width: 69px;
-    background: url(../images/research.png) no-repeat -18px -16px;
+.about-box  ul.items li a{
+    color: #333;
 }
-.about-list li.clinical i {
-    width: 69px;
-    height: 80px;
-    background: url(../images/clinical.png) no-repeat -12px -10px;
-}
-.about-list li.healthy i {
-     width: 80px;
-     background: url(../images/healthy.png) no-repeat -12px -16px;
-}
-
-.about-list li.overseas i {
-    width: 80px;
-    height: 80px;
-    background: url(../images/overseas.png) no-repeat -9px -10px;
-}
-.about-list li i {
+.about-box  ul.items li i {
     display: block;
     position: relative;
     margin: 0 auto;
     margin-top: 43px;
     height: 69px;
 }
-.about-list li b {
+
+.about-box  ul.items li.pc i {
+    width: 69px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -245px -357px;
+}
+
+.about-box  ul.items li.mobi i {
+    width: 64px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -416px -291px;
+}
+
+.about-box  ul.items li.sys i {
+    width: 76px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -415px -362px;
+}
+
+.about-box  ul.items li.app i {
+    width: 74px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -244px -439px;
+}
+
+.about-box  ul.items li.host i {
+    width: 79px;
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -420px -439px;
+}
+
+.about-box  ul.items li u {
     display: block;
     position: absolute;
     width: 156px;
@@ -229,28 +269,32 @@ footer{
     -o-transition: all .5s ease-in-out 0s;
     transition: all .5s ease-in-out 0s;
 }
-/*.about-list li b.cl {
-    clip: rect(0px,156px,156px,78px);
-}
-.about-list li b.cl {
+
+.about-box  ul.items li u.cl {
     clip: rect(0px,156px,-10px,78px);
 }
-.about-list li b.cr {
+
+.about-box.active  ul.items li u.cl {
+    clip: rect(0px,156px,156px,78px);
+}
+
+.about-box  ul.items li u.cr {
+    clip: rect(156px,78px,156px,0px);
+}
+
+.about-box.active  ul.items li u.cr {
     clip: rect(0px,78px,156px,0px);
 }
 
-.about-list li b.cr {
-    clip: rect(156px,78px,156px,0px);
-}*/
-
-.about-list li strong {
+.about-box  ul.items li strong {
     display: block;
     margin-top: 70px;
     font-size: 16px;
     font-weight: normal;
     text-align: center;
 }
-.about-list li p {
+
+.about-box  ul.items li p {
     position: relative;
     top: 200px;
     color: White;
@@ -259,6 +303,79 @@ footer{
     line-height: 20px;
     text-align: center;
 }
+
+.about-box  ul.items li:hover {
+    background-position: 0px 0px;
+    -webkit-transition: all .5s ease-in-out .3s;
+    -moz-transition: all .5s ease-in-out .3s;
+    -ms-transition: all .5s ease-in-out .3s;
+    -o-transition: all .5s ease-in-out .3s;
+    transition: all .5s ease-in-out .3s;
+}
+.about-box  ul.items li:hover a{
+    color: #fff;
+}
+.about-box  ul.items li:hover i {
+    -webkit-transition: all .5s ease-in-out .4s;
+    -moz-transition: all .5s ease-in-out .4s;
+    -ms-transition: all .5s ease-in-out .4s;
+    -o-transition: all .5s ease-in-out .4s;
+    transition: all .5s ease-in-out .4s;
+}
+
+.about-box  ul.items li.pc:hover i {
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -168px -357px;
+}
+
+.about-box  ul.items li.mobi:hover i {
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -337px -291px;
+}
+
+.about-box  ul.items li.sys:hover i {
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -327px -362px;
+}
+
+.about-box  ul.items li.app:hover i {
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -164px -439px;
+}
+
+.about-box  ul.items li.host:hover i {
+    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -335px -439px;
+}
+
+.about-box  ul.items li:hover u.cl {
+    clip: rect(0px,156px,-10px,78px);
+}
+
+.about-box  ul.items li:hover u.cr {
+    clip: rect(156px,78px,156px,0px);
+}
+
+.about-box  ul.items li:hover strong {
+    color: White;
+    -webkit-transition-delay: .4s;
+    -moz-transition-delay: .4s;
+    -ms-transition-delay: .4s;
+    -o-transition-delay: .4s;
+    transition-delay: .4s;
+}
+
+.about-box  ul.items li:hover p {
+    top: 20px;
+    -webkit-transition: all .3s ease-in-out .5s;
+    -moz-transition: all .3s ease-in-out .5s;
+    -ms-transition: all .3s ease-in-out .5s;
+    -o-transition: all .3s ease-in-out .5s;
+    transition: all .3s ease-in-out .5s;
+}
+
+
+
+
+
+
+
+
 
 .team{
     width: 100%;

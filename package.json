@@ -1,0 +1,26 @@
+{
+  "name": "gene",
+  "version": "1.0.0",
+  "description": "gene静态页面",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.3",
+    "merge-stream": "^1.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coderGun/gene.git"
+  },
+  "author": "reny",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coderGun/gene/issues"
+  },
+  "homepage": "https://github.com/coderGun/gene#readme"
+}
