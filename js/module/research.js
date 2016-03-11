@@ -24,6 +24,7 @@
 })(window, document);
 /*螺旋效果 end*/
 
+// 页面初始化
 $(function () {
     var $cancer=$('#cancer');
     var $tumour=$('#tumour');
@@ -47,4 +48,12 @@ $(function () {
             clearInterval(tumourTime);
         }
     },100);
+
+    //跳转到list页面
+    $('#keyword').on('blur', function () {
+        window.location.href='list.html?keyword'+$(this).val();
+    });
+
+
+
 });

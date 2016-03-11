@@ -205,20 +205,17 @@ footer{
     line-height: 1.5;
 }
 
-
-
-
 .about-box  ul.items {
-    margin: 0 auto;
-    margin-top: 60px;
+    margin: 60px auto;
 }
 
 .about-box  ul.items li {
     width: 200px;
     height: 300px;
     margin: 0 8px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/bg_green.png) no-repeat 0px 400px;
+    background: url(../images/business-bg.png) no-repeat 0px 400px;
     overflow: hidden;
+    padding: 0;
 }
 .about-box  ul.items li a{
     color: #333;
@@ -226,43 +223,39 @@ footer{
 .about-box  ul.items li i {
     display: block;
     position: relative;
-    margin: 0 auto;
-    margin-top: 43px;
+    margin: 41px auto 0 auto;
     height: 69px;
 }
 
-.about-box  ul.items li.pc i {
+.about-box  ul.items li.research i {
     width: 69px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -245px -357px;
+    background: url(../images/research.png) no-repeat center -15px;
 }
 
-.about-box  ul.items li.mobi i {
+.about-box  ul.items li.clinical i {
     width: 64px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -416px -291px;
+    height: 75px;
+    background: url(../images/clinical.png) no-repeat center -15px;
 }
 
-.about-box  ul.items li.sys i {
-    width: 76px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -415px -362px;
+.about-box  ul.items li.health i {
+    width: 82px;
+    background: url(../images/health.png) no-repeat center -15px;
 }
 
-.about-box  ul.items li.app i {
-    width: 74px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -244px -439px;
-}
-
-.about-box  ul.items li.host i {
-    width: 79px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -420px -439px;
+.about-box  ul.items li.abroad i {
+    width: 82px;
+    height: 80px;
+    background: url(../images/abroad.png) no-repeat center -10px;
 }
 
 .about-box  ul.items li u {
     display: block;
     position: absolute;
-    width: 156px;
-    height: 156px;
+    width: 169px;
+    height: 169px;
     margin-left: 22px;
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat 0px -363px;
+    background: url(../images/circle-research.png) no-repeat;
     -webkit-transition: all .5s ease-in-out 0s;
     -moz-transition: all .5s ease-in-out 0s;
     -ms-transition: all .5s ease-in-out 0s;
@@ -270,20 +263,32 @@ footer{
     transition: all .5s ease-in-out 0s;
 }
 
+.about-box  ul.items li.clinical u {
+    background: url(../images/circle-clinical.png) no-repeat;
+}
+.about-box  ul.items li.health u {
+    background: url(../images/circle-health.png) no-repeat;
+}
+.about-box  ul.items li.abroad u {
+    background: url(../images/circle-abroad.png) no-repeat;
+}
+
+
+
 .about-box  ul.items li u.cl {
-    clip: rect(0px,156px,-10px,78px);
+    clip: rect(0px,169px,-10px,78px);
 }
 
 .about-box.active  ul.items li u.cl {
-    clip: rect(0px,156px,156px,78px);
+    clip: rect(0px,169px,169px,78px);
 }
 
 .about-box  ul.items li u.cr {
-    clip: rect(156px,78px,156px,0px);
+    clip: rect(169px,78px,169px,0px);
 }
 
 .about-box.active  ul.items li u.cr {
-    clip: rect(0px,78px,156px,0px);
+    clip: rect(0px,78px,169px,0px);
 }
 
 .about-box  ul.items li strong {
@@ -302,6 +307,10 @@ footer{
     font-size: 12px;
     line-height: 20px;
     text-align: center;
+}
+
+.about-box  ul.items li:hover strong{
+    font-size: 18px;
 }
 
 .about-box  ul.items li:hover {
@@ -323,32 +332,28 @@ footer{
     transition: all .5s ease-in-out .4s;
 }
 
-.about-box  ul.items li.pc:hover i {
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -168px -357px;
+.about-box  ul.items li.research:hover i {
+    background: url(../images/research.png) no-repeat center -116px;
 }
 
-.about-box  ul.items li.mobi:hover i {
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -337px -291px;
+.about-box  ul.items li.clinical:hover i {
+    background: url(../images/clinical.png) no-repeat center -116px;
 }
 
-.about-box  ul.items li.sys:hover i {
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -327px -362px;
+.about-box  ul.items li.health:hover i {
+    background: url(../images/health.png) no-repeat center -113px;
 }
 
-.about-box  ul.items li.app:hover i {
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -164px -439px;
-}
-
-.about-box  ul.items li.host:hover i {
-    background: url(http://www.17sucai.com/preview/153526/2016-02-17/bs/images/words.png) no-repeat -335px -439px;
+.about-box  ul.items li.abroad:hover i {
+    background: url(../images/abroad.png) no-repeat center -110px;
 }
 
 .about-box  ul.items li:hover u.cl {
-    clip: rect(0px,156px,-10px,78px);
+    clip: rect(0px,169px,-10px,78px);
 }
 
 .about-box  ul.items li:hover u.cr {
-    clip: rect(156px,78px,156px,0px);
+    clip: rect(169px,78px,169px,0px);
 }
 
 .about-box  ul.items li:hover strong {
@@ -423,6 +428,7 @@ footer{
 }
 .news-list-box li{
     width: 250px;
+    height: 330px;
     background: #fff;
     font-size: 16px;
     font-family: "MicrosoftYaHei";
@@ -431,6 +437,16 @@ footer{
     padding: 0;
     margin: 0 30px;
     overflow: hidden;
+}
+.news-list-box li:hover{
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;}
 }
 .news-list-box li h6{
     padding:15px 20px 36px 20px;

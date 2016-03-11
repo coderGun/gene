@@ -97,7 +97,6 @@ footer{
     padding-left: 30px;
 }
 .target-box{
-    width: 600px;
     padding: 60px 0;
     margin: 0 auto;
 }
@@ -111,6 +110,10 @@ footer{
     font-size: 60px;
     font-family: "STHeiti";
     color: rgb(51, 51, 51);
+    cursor: pointer;
+}
+.target-data h2:hover{
+    font-size: 80px;
 }
 .target-data p{
     color: #666;
@@ -122,6 +125,9 @@ footer{
     color: rgb(51, 51, 51);
     line-height: 1.5;
     text-align: justify;
+}
+.target-detail p{
+    text-indent: 2em;
 }
 .partner-box .caption h6 {
     font-size: 16px;
