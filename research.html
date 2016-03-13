@@ -40,9 +40,24 @@
             <div class="search-box">
                 <div class="text-center">
                     <h2>科研服务</h2>
-                    <div class="form-group search-text">
-                        <span class="glyphicon glyphicon-search form-control-feedback"></span>
-                        <input id="keyword" name="keyword" type="text" class="form-control" placeholder="输入您要查询的基因">
+                    <div class="form-group">
+                        <span class="s-input-box">
+                            <select id="disease" name="disease">
+                                <option value="0">全部分类</option>
+                                <option value="1">分类1</option>
+                                <option value="2">分类2</option>
+                                <option value="3">分类3</option>
+                                <option value="4">分类4</option>
+                            </select>
+                            <input id="keyword" type="text" class="form-control keyword" placeholder="请输入您要查询的基因，例如：DNAL4">
+                            <div id="suggestion" class="suggestion nobg hide">
+                                <div class="suginner clearfix">
+                                    <ul id="suglist" class="suglist">
+                                    </ul>
+                                </div>
+                            </div>
+                        </span>
+                        <a id="search" class="btn s-btn-enter">搜索</a>
                     </div>
                 </div>
             </div>

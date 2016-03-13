@@ -49,11 +49,76 @@ $(function () {
         }
     },100);
 
+
+    var Search=function(){
+        var search=function(){
+            var name=$('#keyword').val();
+            var disease=$('#disease').val();
+            if(disease==0){
+                disease='';
+            }
+            if(!name){
+                blur();
+            }
+            var condition={
+                name:name,
+                disease:disease
+            };
+
+            //设置查询按钮
+            $('#search').attr('href','/searchGene?name='+name);
+            //$.post('/searchName',condition,function(data){
+
+                var data={
+                    result:{
+                        status:'OK',
+                        datas:[
+                            'asbs','sdgfsd','sdfa','sdfgs'
+                        ]
+                    }
+                }
+
+                if(data.result &&data.result.status=='OK'){
+                    var items=data.result.datas;
+                    var length=items.length;
+                    var lis=[];
+                    if(length==0){
+                        $('#suglist').html('<li>没有你要查找的基因</li>');
+                        $('#suggestion').removeClass('hide');
+                        return false;
+                    }
+                    for(var i=0;i<length;i++){
+                        var item=items[i];
+                        var li= '<li> <a href="/searchGene?name='+item+'">'+item+'</a></li>';
+                        lis.push(li);
+                    }
+                    $('#suglist').html(lis.join(''));
+                    $('#suggestion').removeClass('hide');
+                }
+            //});
+        };
+
+        var blur=function(){
+            var keyword=$('#keyword').val();
+            if(!keyword){
+                $('#suggestion').addClass('hide');
+            }
+            return false;
+        };
+
+        //主函数初始化
+        return {
+            init:function(){
+                $('#keyword').on('keyup',search);
+                $('#keyword').on('blur',blur);
+            }
+        };
+
+    }();
+    Search.init();
     //跳转到list页面
-    $('#keyword').on('blur', function () {
-        window.location.href='list.html?keyword'+$(this).val();
-    });
-
-
-
+    //$('#keyword').on('blur', function () {
+    //    window.location.href='list.html?keyword'+$(this).val();
+    //});
 });
+
